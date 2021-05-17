@@ -20,7 +20,7 @@ const Main = () => {
           </p>
         </div>
         <div className={Styles.landingSectionLapels}>
-          <Label hasHeart={true} value="0" name="Label" />
+          <Label hasHeart={true} value="50" name="Label" />
           <Label hasHeart={false} value="0" name="Label" />
           <Label hasHeart={false} value="0" name="Label" />
           <Label hasHeart={false} value="0" name="Label" />
