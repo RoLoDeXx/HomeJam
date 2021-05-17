@@ -28,8 +28,12 @@ const Main = () => {
       </section>
       <section>
         <div className="d-flex align-items-center justify-content-between">
-          <h2 className="mb-0 font-baskerville text-white">Upcoming Shows</h2>
-          <button className="font-nunito button border-0 bg-transparent text-white">
+          <h2
+            className={`mb-0 font-baskerville text-white ${Styles.underlinedText}`}
+          >
+            <span>Upcoming Shows</span>
+          </h2>
+          <button className="text-warning font-nunito button border-0 bg-transparent">
             View All
           </button>
         </div>
@@ -37,7 +41,11 @@ const Main = () => {
       </section>
       <section className="mb-5 pt-5">
         <div className="mt-5 d-flex align-items-center justify-content-between font-nunito">
-          <h2 className="font-baskerville text-white">Reviews</h2>
+          <h2
+            className={`font-baskerville text-white ${Styles.underlinedText}`}
+          >
+            <span>Reviews</span>
+          </h2>
           <div className="d-flex align-items-center">
             <p className="mb-0 mx-3 text-white">
               <b>1</b> / 12

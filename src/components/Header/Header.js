@@ -9,7 +9,7 @@ const Header = () => {
        font-nunito 
       `}
     >
-      <img src={siteLogo} alt="site logo" />
+      <img src={siteLogo} alt="site logo" className="btn" />
 
       <div className="d-none d-md-flex ">
         <a
@@ -41,7 +41,7 @@ const Header = () => {
       <div className="d-flex d-md-none">
         <a
           href={() => false}
-          className="d-flex align-items-center btn border-0 bg-transparent mx-4 p-0 text-white"
+          className="d-flex align-items-center btn border-0 bg-transparent mx-2 p-0 text-white"
         >
           <img
             src={require("../../assets/icons/glass.png").default}
@@ -50,7 +50,7 @@ const Header = () => {
         </a>
         <a
           href={() => false}
-          className="d-flex align-items-center btn border-0 bg-transparent mx-4 p-0 text-white"
+          className="d-flex align-items-center btn border-0 bg-transparent mx-2 p-0 text-white"
         >
           <img
             src={require("../../assets/icons/cart.png").default}

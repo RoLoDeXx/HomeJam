@@ -8,6 +8,8 @@
   -webkit-box-shadow: #367a9c 10px -10px 0px;
   -o-box-shadow: #367a9c 10px -10px 0px;
   padding: 1rem;
+  margin: 1rem auto;
+  width: 360px;
 }
 
 .customerReviews {
@@ -47,4 +49,19 @@
   align-items: center;
   text-transform: uppercase;
   color: #e5c558;
+}
+
+@media only screen and (max-width: 600px) {
+  .customerReviews {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .customerReviews::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    width: 300px;
+  }
 }

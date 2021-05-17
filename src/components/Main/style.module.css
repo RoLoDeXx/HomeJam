@@ -18,10 +18,11 @@
 }
 
 .landingSectionLapels {
-  display: flex;
+  display: grid;
   margin-top: 15rem;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 .label {
@@ -33,4 +34,46 @@
   border-radius: 50%;
   height: 208px;
   width: 208px;
+  margin: auto;
+}
+
+.underlinedText {
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.underlinedText span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 1px;
+  width: 45px;
+  border-bottom: 4px solid #0259eb;
+  /* percentage of the element width*/
+  margin-top: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+  .landingSectionLapels {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 10rem;
+  }
+  .landingSectionLapels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .landingSection {
+    margin-top: 7.5rem;
+  }
+
+  .landingSection h1 {
+    font-size: 40px;
+  }
+  .landingSection > div > p {
+    font-size: 16px;
+  }
 }
