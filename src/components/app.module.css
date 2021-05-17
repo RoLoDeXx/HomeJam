@@ -1,0 +1,18 @@
+.backdrop {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 11, 20, 0.28) 0%,
+    rgba(1, 13, 32, 0.69) 67.53%,
+    #0a0b1a 85.33%
+  );
+  background-image: url("../assets/images/backdrops/backdrop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .backdrop {
+    background-size: auto;
+    background-position-x: center;
+  }
+}

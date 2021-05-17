@@ -1,0 +1,50 @@
+.card {
+  background: #0a0b1a;
+  border: 2px solid #e5af56;
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: #367a9c 10px -10px 0px;
+  -moz-box-shadow: #367a9c 0px -10px 0px;
+  -webkit-box-shadow: #367a9c 10px -10px 0px;
+  -o-box-shadow: #367a9c 10px -10px 0px;
+  padding: 1rem;
+}
+
+.customerReviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.cardBody p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.cardBody > p {
+  font-family: Quattrocento;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.cardBody > div > small {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #e5c558;
+}
